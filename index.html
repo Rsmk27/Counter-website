@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple and elegant personal counter application">
+    <title>Personal Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Personal Counter</h1>
+            <p class="subtitle">Track your progress, one count at a time</p>
+        </header>
+        
+        <main>
+            <div class="counter-display">
+                <span id="counter-value">0</span>
+            </div>
+            
+            <div class="button-group">
+                <button class="btn btn-decrement" id="decrement-btn" aria-label="Decrease counter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    <span>Decrease</span>
+                </button>
+                
+                <button class="btn btn-increment" id="increment-btn" aria-label="Increase counter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    <span>Increase</span>
+                </button>
+                
+                <button class="btn btn-reset" id="reset-btn" aria-label="Reset counter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                        <path d="M3 3v5h5"></path>
+                    </svg>
+                    <span>Reset</span>
+                </button>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">Last Updated</span>
+                    <span class="stat-value" id="last-updated">Never</span>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Data is saved automatically in your browser's local storage</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
